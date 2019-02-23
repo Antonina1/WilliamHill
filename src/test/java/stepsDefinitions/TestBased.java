@@ -35,10 +35,6 @@ public class TestBased {
             wd = new InternetExplorerDriver();
         }
 
-        wd.manage().deleteAllCookies();
-        wd.get("http://sports.williamhill.com/betting/en-gb");
-        wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
     }
 

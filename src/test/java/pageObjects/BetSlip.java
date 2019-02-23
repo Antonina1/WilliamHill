@@ -24,10 +24,8 @@ public class BetSlip extends BasePage {
     public static WebElement totalStake;
 
 
-    public BetSlip(WebDriver wd, WebDriverWait wait, Logger logger) {
-        super(wd, wait, logger);
-        PageFactory.initElements(wd, this);
-        logger.info("Login is successfully performed");
+    public BetSlip(WebDriver wd) {
+        super(wd);
     }
 
     public static String ReturnStake() throws Exception{

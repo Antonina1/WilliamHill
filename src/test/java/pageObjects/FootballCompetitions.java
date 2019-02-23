@@ -17,17 +17,9 @@ public class FootballCompetitions extends BasePage{
     public static WebElement englishPremierLeagueCompetition;
 
 
-    public FootballCompetitions(WebDriver wd, WebDriverWait wait, Logger logger) {
-        super(wd, wait, logger);
-        PageFactory.initElements(wd, this);
-        logger.info("Football form is opened");
+    public FootballCompetitions(WebDriver wd) {
+        super(wd);
     }
-
-    public void OpenEnglishPremierLeagueCompetition() {
-        waitAndClick(englishPremierLeagueCompetition);
-        logger.info("Competitions form is opened");
-    }
-
 
 
 }

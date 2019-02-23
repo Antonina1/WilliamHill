@@ -12,24 +12,14 @@ import org.testng.log4testng.Logger;
  * Created by Tonya on 2/21/2019.
  */
 public class Football extends BasePage  {
-    public WebDriver wd;
-    public WebDriverWait wait;
-    public Logger logger;
 
-    public Football(WebDriver wd, WebDriverWait wait, Logger logger) {
-        super(wd, wait, logger);
-        PageFactory.initElements(wd, this);
-        logger.info("Football form is opened");
+    public Football(WebDriver wd) {
+        super(wd);
     }
 
     @FindBy(xpath = "//a[@href='/betting/en-gb/football/competitions']")
     public static WebElement competitions;
 
-
-    public void OpenFootballCompetitionsPage() {
-        waitAndClick(competitions);
-        logger.info("Competitions form is opened");
-    }
 
 }
 

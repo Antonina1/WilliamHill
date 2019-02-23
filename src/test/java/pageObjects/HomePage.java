@@ -27,14 +27,8 @@ public class HomePage extends BasePage {
     public static WebElement BetSlipForm;
 
 
-    public HomePage(WebDriver wd, WebDriverWait wait, Logger logger) {
-        super(wd, wait, logger);
-        PageFactory.initElements(wd, this);
-        logger.info("Login is successfully performed");
-    }
-    public void OpenFootballPage() {
-        waitAndClick(FootballFromAllSports);
-        logger.info("Football form is opened");
+    public HomePage(WebDriver wd) {
+        super(wd);
     }
 
 }
