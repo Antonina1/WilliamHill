@@ -50,7 +50,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3587333371,
+  "duration": 4906099587,
   "status": "passed"
 });
 formatter.scenario({
@@ -84,7 +84,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 1348038549,
+  "duration": 1205174274,
   "status": "passed"
 });
 });

@@ -34,7 +34,10 @@ public class TestBased {
         } else if (browser == BrowserType.ANDROID){
             wd = new InternetExplorerDriver();
         }
+        wd.manage().window().maximize();
+        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
+        System.out.printf("yyyyeeeeee");
 
     }
 
