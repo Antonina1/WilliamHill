@@ -3,12 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.log4testng.Logger;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Tonya on 2/18/2019.
@@ -16,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BasePage {
 
-    @FindBy(xpath = "(//*[@id='nav-football'])[1]")//li[@id='nav-football'])[1]")
+    @FindBy(xpath = "(//*[@id='nav-football'])[1]")
     public static WebElement FootballFrom;
 
     @FindBy(className = "account-tab__text -account")
@@ -25,21 +20,21 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//span[contains(@class,'-account')]")
     public static WebElement AccountBalance;
 
-    @FindBy(xpath ="(//ul[@class='betslip-navigation__menu']/li/a)[1]")
+    @FindBy(xpath = "(//ul[@class='betslip-navigation__menu']/li/a)[1]")
     public static WebElement BetSlipForm;
 
-    @FindBy(xpath =("//a[@data-toggle-send='odds-format']"))
+    @FindBy(xpath = ("//a[@data-toggle-send='odds-format']"))
     public static WebElement OddsForm;
 
-    @FindBy(xpath =("(//a[@data-odds-format='decimal'])[1]"))
+    @FindBy(xpath = ("(//a[@data-odds-format='decimal'])[1]"))
     public static WebElement DecimalFormat;
 
 
     public HomePage(WebDriver wd) {
         super(wd);
         PageFactory.initElements(wd, this);
- //       logger.info("Login is successfully performed");
     }
+
     public void OpenFootballPage() throws InterruptedException {
         waitAndClick(FootballFrom);
         Thread.sleep(1000);

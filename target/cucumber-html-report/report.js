@@ -1,16 +1,16 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/sport.feature");
 formatter.feature({
   "line": 1,
-  "name": "Ability to place a bet on a English Premier League event",
+  "name": "Place a bet on a English Premier League event",
   "description": "",
-  "id": "ability-to-place-a-bet-on-a-english-premier-league-event",
+  "id": "place-a-bet-on-a-english-premier-league-event",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 4,
   "name": "As a WH Customer I want to place a bet on a English Premier League event",
   "description": "",
-  "id": "ability-to-place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event",
+  "id": "place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
@@ -43,7 +43,7 @@ formatter.examples({
   "line": 12,
   "name": "",
   "description": "",
-  "id": "ability-to-place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;",
+  "id": "place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;",
   "rows": [
     {
       "cells": [
@@ -53,7 +53,7 @@ formatter.examples({
         "bet"
       ],
       "line": 13,
-      "id": "ability-to-place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;;1"
+      "id": "place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;;1"
     },
     {
       "cells": [
@@ -63,20 +63,20 @@ formatter.examples({
         "0.05"
       ],
       "line": 14,
-      "id": "ability-to-place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;;2"
+      "id": "place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 158293,
+  "duration": 197973,
   "status": "passed"
 });
 formatter.scenario({
   "line": 14,
   "name": "As a WH Customer I want to place a bet on a English Premier League event",
   "description": "",
-  "id": "ability-to-place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;;2",
+  "id": "place-a-bet-on-a-english-premier-league-event;as-a-wh-customer-i-want-to-place-a-bet-on-a-english-premier-league-event;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -128,7 +128,7 @@ formatter.match({
   "location": "StepsDefinitions.openWilliamHillPage(String)"
 });
 formatter.result({
-  "duration": 10096738986,
+  "duration": 10229230507,
   "status": "passed"
 });
 formatter.match({
@@ -145,15 +145,15 @@ formatter.match({
   "location": "StepsDefinitions.userLogInToWilliamHill(String,String)"
 });
 formatter.result({
-  "duration": 46523307,
-  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d72.0.3626.119)\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 10 milliseconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027DESKTOP-AM2BCG8\u0027, ip: \u0027192.168.0.206\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:56062}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir\u003dC:\\Users\\Tonya\\AppData\\Local\\Temp\\scoped_dir7484_31738}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d72.0.3626.119, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c688599126b4de37dd3053cf452e0c3a\n*** Element info: {Using\u003dxpath, value\u003d//a[@id\u003d\u0027accountTabButton\u0027]//span[text()\u003d\u0027Login\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:32)\r\n\tat pageObjects.LogInPage.login(LogInPage.java:35)\r\n\tat stepsDefinitions.StepsDefinitions.userLogInToWilliamHill(StepsDefinitions.java:85)\r\n\tat ✽.When User logIn as user with login as \"WHITA_opex7\" and password as \"0p3x2017\"(src/test/resources/features/sport.feature:7)\r\n",
-  "status": "failed"
+  "duration": 8586574080,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepsDefinitions.UserGoToEnglishPremierLeagueEvents()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18635100160,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -165,7 +165,8 @@ formatter.match({
   "location": "StepsDefinitions.userPlaceBetForHomeTeamToWin(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18177343146,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -177,10 +178,11 @@ formatter.match({
   "location": "StepsDefinitions.userSeeReturnStakeAndTotalStake(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 410012587,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 17920,
+  "duration": 1413981866,
   "status": "passed"
 });
 });

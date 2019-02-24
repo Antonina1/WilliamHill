@@ -33,19 +33,15 @@ public class LogInPage extends BasePage{
 
     public void login(String login, String Password) throws InterruptedException {
         waitAndClick(loginButton);
-  //      logger.info("Opened LogIn form");
         Thread.sleep(1000);
 
         waitAndSendText(usernameField, login);
-  //      logger.info("UserName is entered");
         Thread.sleep(1000);
 
         waitAndSendText(passwordField, Password);
- //       logger.info("Password is entered");
         Thread.sleep(1000);
 
         waitAndClick(submitLogin);
-  //      logger.info("Clicked on Submit button");
         Thread.sleep(1000);
 
     }

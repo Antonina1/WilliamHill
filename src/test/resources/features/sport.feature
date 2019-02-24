@@ -1,4 +1,4 @@
-Feature: Ability to place a bet on a English Premier League event
+Feature: Place a bet on a English Premier League event
 
 
   Scenario Outline: As a WH Customer I want to place a bet on a English Premier League event
