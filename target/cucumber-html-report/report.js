@@ -69,7 +69,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 217600,
+  "duration": 158293,
   "status": "passed"
 });
 formatter.scenario({
@@ -121,16 +121,15 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "\"desktop\"",
-      "offset": 32
+      "val": "desktop",
+      "offset": 33
     }
   ],
   "location": "StepsDefinitions.openWilliamHillPage(String)"
 });
 formatter.result({
-  "duration": 233105493,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepsDefinitions.StepsDefinitions.openWilliamHillPage(StepsDefinitions.java:75)\r\n\tat ✽.Given User open WilliamHill Page from \"desktop\"(src/test/resources/features/sport.feature:6)\r\n",
-  "status": "failed"
+  "duration": 10096738986,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -146,7 +145,9 @@ formatter.match({
   "location": "StepsDefinitions.userLogInToWilliamHill(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 46523307,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d72.0.3626.119)\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 10 milliseconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027DESKTOP-AM2BCG8\u0027, ip: \u0027192.168.0.206\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:56062}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir\u003dC:\\Users\\Tonya\\AppData\\Local\\Temp\\scoped_dir7484_31738}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d72.0.3626.119, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c688599126b4de37dd3053cf452e0c3a\n*** Element info: {Using\u003dxpath, value\u003d//a[@id\u003d\u0027accountTabButton\u0027]//span[text()\u003d\u0027Login\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:32)\r\n\tat pageObjects.LogInPage.login(LogInPage.java:35)\r\n\tat stepsDefinitions.StepsDefinitions.userLogInToWilliamHill(StepsDefinitions.java:85)\r\n\tat ✽.When User logIn as user with login as \"WHITA_opex7\" and password as \"0p3x2017\"(src/test/resources/features/sport.feature:7)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "StepsDefinitions.UserGoToEnglishPremierLeagueEvents()"
@@ -179,7 +180,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 20054,
+  "duration": 17920,
   "status": "passed"
 });
 });

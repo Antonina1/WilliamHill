@@ -45,7 +45,7 @@ public class StepsDefinitions {
         else {System.setProperty("webdriver.chrome.driver", "chromedriver.exe");}
     }
 
-    @Given("^User open WilliamHill Page from (.+)$")
+    @Given("^User open WilliamHill Page from \\\"([^\\\"]*)\\\"$")
     public void openWilliamHillPage(String device) {
      //   wd = wd;
     //    wait = new WebDriverWait(wd, 15);
@@ -73,10 +73,10 @@ public class StepsDefinitions {
             deviceGiven = device;
         }
         wd.get("https://sports.williamhill.com/betting/en-gb");
-        wait = new WebDriverWait(wd, 60);
-        wd.manage().deleteAllCookies();
-        wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+ //       wait = new WebDriverWait(wd, 60);
+ //       wd.manage().deleteAllCookies();
+ //       wd.manage().window().maximize();
+ //       wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
 
     @When("^User logIn as user with login as \\\"([^\\\"]*)\\\" and password as \\\"([^\\\"]*)\\\"$")
