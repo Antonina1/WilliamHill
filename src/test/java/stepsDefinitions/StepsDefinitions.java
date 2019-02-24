@@ -29,9 +29,9 @@ public class StepsDefinitions {
 
   //  TestBased testBased= new TestBased(System.getProperty("browser",BrowserType.CHROME));
 
-    WebDriver wd;
-   // String odds;
-    WebDriverWait wait;
+    private WebDriver wd;
+    private String deviceGiven;
+    private WebDriverWait wait;
 
     public StepsDefinitions() throws InterruptedException {
     }
@@ -45,16 +45,10 @@ public class StepsDefinitions {
         else {System.setProperty("webdriver.chrome.driver", "chromedriver.exe");}
     }
 
-    @After
-    public void stop() {
-        wd.quit();
-    }
-
-    @Given("^User open WilliamHill Page$")
+    @Given("^User open WilliamHill Page from (.+)$")
     public void openWilliamHillPage(String device) {
-        wd = wd;
+     //   wd = wd;
     //    wait = new WebDriverWait(wd, 15);
-        wd.get("https://sports.williamhill.com/betting/en-gb");
 
         // Logic for running on DesKtop or on Mobile (using emulation)
         if (device.equals("desktop")) {
@@ -63,7 +57,7 @@ public class StepsDefinitions {
             wd.manage().window().maximize();
             wait = new WebDriverWait(wd, 15);
 
-         //   deviceGiven = device;
+            deviceGiven = device;
         }
         else if (device.equals("mobile")) {
 
@@ -76,9 +70,9 @@ public class StepsDefinitions {
             wd.manage().window().maximize();
             wait = new WebDriverWait(wd, 15);
 
-      //      deviceGiven = device;
+            deviceGiven = device;
         }
-
+        wd.get("https://sports.williamhill.com/betting/en-gb");
         wait = new WebDriverWait(wd, 60);
         wd.manage().deleteAllCookies();
         wd.manage().window().maximize();
@@ -153,6 +147,11 @@ public class StepsDefinitions {
             //SoftAssert softAssert = new SoftAssert();
             Assert.assertEquals(actualTotalStake, expectedTotalStake);
             Assert.assertEquals(actualReturnStake, expectedReturnStake);
+    }
+
+    @After
+    public void stop() {
+ //       wd.quit();
     }
 
 }

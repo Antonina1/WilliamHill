@@ -16,7 +16,7 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 6,
-  "name": "User open WilliamHill Page",
+  "name": "User open WilliamHill Page from \"\u003cdevice\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
@@ -47,6 +47,7 @@ formatter.examples({
   "rows": [
     {
       "cells": [
+        "device",
         "login",
         "password",
         "bet"
@@ -56,6 +57,7 @@ formatter.examples({
     },
     {
       "cells": [
+        "desktop",
         "WHITA_opex7",
         "0p3x2017",
         "0.05"
@@ -67,7 +69,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4715639040,
+  "duration": 217600,
   "status": "passed"
 });
 formatter.scenario({
@@ -80,15 +82,18 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "User open WilliamHill Page",
+  "name": "User open WilliamHill Page from \"desktop\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Given "
 });
 formatter.step({
   "line": 7,
   "name": "User logIn as user with login as \"WHITA_opex7\" and password as \"0p3x2017\"",
   "matchedColumns": [
-    0,
-    1
+    1,
+    2
   ],
   "keyword": "When "
 });
@@ -101,7 +106,7 @@ formatter.step({
   "line": 9,
   "name": "User place a bet \"0.05\" for home team to \u0027Win\u0027",
   "matchedColumns": [
-    2
+    3
   ],
   "keyword": "Then "
 });
@@ -109,16 +114,23 @@ formatter.step({
   "line": 10,
   "name": "User see returns based on bet \"0.05\" and odds",
   "matchedColumns": [
-    2
+    3
   ],
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepsDefinitions.openWilliamHillPage()"
+  "arguments": [
+    {
+      "val": "\"desktop\"",
+      "offset": 32
+    }
+  ],
+  "location": "StepsDefinitions.openWilliamHillPage(String)"
 });
 formatter.result({
-  "duration": 8045678933,
-  "status": "passed"
+  "duration": 233105493,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepsDefinitions.StepsDefinitions.openWilliamHillPage(StepsDefinitions.java:75)\r\n\tat ✽.Given User open WilliamHill Page from \"desktop\"(src/test/resources/features/sport.feature:6)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -134,15 +146,13 @@ formatter.match({
   "location": "StepsDefinitions.userLogInToWilliamHill(String,String)"
 });
 formatter.result({
-  "duration": 6483031040,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepsDefinitions.UserGoToEnglishPremierLeagueEvents()"
 });
 formatter.result({
-  "duration": 17800858880,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -154,9 +164,7 @@ formatter.match({
   "location": "StepsDefinitions.userPlaceBetForHomeTeamToWin(String)"
 });
 formatter.result({
-  "duration": 16638876587,
-  "error_message": "org.openqa.selenium.WebDriverException: element not interactable\n  (Session info: chrome\u003d72.0.3626.119)\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 70 milliseconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027DESKTOP-AM2BCG8\u0027, ip: \u0027192.168.0.206\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54992}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir\u003dC:\\Users\\Tonya\\AppData\\Local\\Temp\\scoped_dir6988_9633}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d72.0.3626.119, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 3addccbecabfa45ac818b4012b69b485\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy21.sendKeys(Unknown Source)\r\n\tat pageObjects.BasePage.waitAndSendText(BasePage.java:37)\r\n\tat pageObjects.BetSlip.enterBet(BetSlip.java:42)\r\n\tat stepsDefinitions.StepsDefinitions.userPlaceBetForHomeTeamToWin(StepsDefinitions.java:96)\r\n\tat ✽.Then User place a bet \"0.05\" for home team to \u0027Win\u0027(src/test/resources/features/sport.feature:9)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -171,7 +179,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 1337888427,
+  "duration": 20054,
   "status": "passed"
 });
 });
