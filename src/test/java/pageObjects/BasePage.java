@@ -18,27 +18,30 @@ import java.util.NoSuchElementException;
 public class BasePage {
 
     public WebDriver wd;
+ //   public WebDriverWait wait;
+  //  public Logger logger;
 
     public BasePage(WebDriver wd) {
         this.wd = wd;
+ //       this.wait = wait;
+  //      this.logger = logger;
+       // PageFactory.initElements(wd, this);
     }
 
+        public void waitAndClick(WebElement element) throws InterruptedException {
+            element.click();
+            Thread.sleep(1000);
+        }
 
-    public static void waitAndClick(WebElement element, WebDriverWait wait) throws InterruptedException {
-        wait.until(ExpectedConditions.visibilityOf(element));
-        element.click();
-        Thread.sleep(1000);
-    }
-    public static void waitAndEnterText(WebElement element, String text, WebDriverWait wait) throws InterruptedException {
-        wait.until(ExpectedConditions.visibilityOf(element));
+    public void waitAndSendText(WebElement element, String text) throws InterruptedException {
         element.sendKeys(text);
-        Thread.sleep(1000);
+       //Thread.sleep(1000);
     }
-    public static String waitAndGetText(WebElement element, WebDriverWait wait) throws InterruptedException {
-
-        wait.until(ExpectedConditions.visibilityOf(element));
+    public String waitAndRetrieveText(WebElement element) throws InterruptedException {
         String text = element.getText();
         Thread.sleep(1000);
         return text;
     }
+
+
 }

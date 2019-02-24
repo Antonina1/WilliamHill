@@ -8,14 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.log4testng.Logger;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by Tonya on 2/18/2019.
  */
 
 public class HomePage extends BasePage {
 
-    @FindBy(xpath = "(//a[@title='Football'])[2]")
-    public static WebElement FootballFromAllSports;
+    @FindBy(xpath = "(//*[@id='nav-football'])[1]")//li[@id='nav-football'])[1]")
+    public static WebElement FootballFrom;
 
     @FindBy(className = "account-tab__text -account")
     public static WebElement AccountForm;
@@ -26,9 +28,31 @@ public class HomePage extends BasePage {
     @FindBy(xpath ="(//ul[@class='betslip-navigation__menu']/li/a)[1]")
     public static WebElement BetSlipForm;
 
+    @FindBy(xpath =("//a[@data-toggle-send='odds-format']"))
+    public static WebElement OddsForm;
+
+    @FindBy(xpath =("(//a[@data-odds-format='decimal'])[1]"))
+    public static WebElement DecimalFormat;
+
 
     public HomePage(WebDriver wd) {
         super(wd);
+        PageFactory.initElements(wd, this);
+ //       logger.info("Login is successfully performed");
+    }
+    public void OpenFootballPage() throws InterruptedException {
+        waitAndClick(FootballFrom);
+        Thread.sleep(1000);
+    }
+
+    public void OpenOddsForm() throws InterruptedException {
+        waitAndClick(OddsForm);
+        Thread.sleep(1000);
+    }
+
+    public void SelectDecimalFormat() throws InterruptedException {
+        waitAndClick(DecimalFormat);
+        Thread.sleep(1000);
     }
 
 }

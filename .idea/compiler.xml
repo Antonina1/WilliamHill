@@ -2,6 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="williamHill-882c797f5ce9767c8a11bcedb1595c6bfbd08287_main" target="1.8" />
+      <module name="williamHill-882c797f5ce9767c8a11bcedb1595c6bfbd08287_test" target="1.8" />
+      <module name="williamHill-updated_main" target="1.8" />
+      <module name="williamHill-updated_test" target="1.8" />
       <module name="williamHill_main" target="1.8" />
       <module name="williamHill_test" target="1.8" />
     </bytecodeTargetLevel>

@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -18,13 +19,15 @@ public class TestBased {
 
     private String browser;
     WebDriver wd;
+ //   public WebDriverWait wait;
 
-    public TestBased(String browser) {
+    public TestBased(String browser)  {
         this.browser = browser;
     }
 
     @BeforeSuite
     public void init() {
+
         if (browser == BrowserType.FIREFOX) {
             wd = new FirefoxDriver();
         }else if(browser == BrowserType.CHROME){
@@ -34,10 +37,11 @@ public class TestBased {
         } else if (browser == BrowserType.ANDROID){
             wd = new InternetExplorerDriver();
         }
+
+        wd.manage().deleteAllCookies();
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
-        System.out.printf("yyyyeeeeee");
 
     }
 
