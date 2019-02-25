@@ -69,7 +69,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 197973,
+  "duration": 171946,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,7 +128,7 @@ formatter.match({
   "location": "StepsDefinitions.openWilliamHillPage(String)"
 });
 formatter.result({
-  "duration": 10229230507,
+  "duration": 10814637226,
   "status": "passed"
 });
 formatter.match({
@@ -145,14 +145,14 @@ formatter.match({
   "location": "StepsDefinitions.userLogInToWilliamHill(String,String)"
 });
 formatter.result({
-  "duration": 8586574080,
+  "duration": 6795622827,
   "status": "passed"
 });
 formatter.match({
   "location": "StepsDefinitions.UserGoToEnglishPremierLeagueEvents()"
 });
 formatter.result({
-  "duration": 18635100160,
+  "duration": 18660344747,
   "status": "passed"
 });
 formatter.match({
@@ -165,7 +165,7 @@ formatter.match({
   "location": "StepsDefinitions.userPlaceBetForHomeTeamToWin(String)"
 });
 formatter.result({
-  "duration": 18177343146,
+  "duration": 7875135573,
   "status": "passed"
 });
 formatter.match({
@@ -178,11 +178,11 @@ formatter.match({
   "location": "StepsDefinitions.userSeeReturnStakeAndTotalStake(String)"
 });
 formatter.result({
-  "duration": 410012587,
+  "duration": 366285654,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1413981866,
+  "duration": 1372463787,
   "status": "passed"
 });
 });

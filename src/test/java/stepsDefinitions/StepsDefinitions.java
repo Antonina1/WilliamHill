@@ -93,7 +93,6 @@ public class StepsDefinitions {
         BetSlip betSlip= new BetSlip(wd);
         Thread.sleep(1000);
         englComp.SelectFirstActiveEvent();
-        Thread.sleep(10000);
         englComp.SelectHomeOdds();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         betSlip.enterBet(bet);
@@ -118,8 +117,7 @@ public class StepsDefinitions {
     }
 
     @After
-    public void stop() {
-        wd.quit();
+    public void stop() {wd.quit();
     }
 
 }

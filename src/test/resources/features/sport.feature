@@ -10,7 +10,7 @@ Feature: Place a bet on a English Premier League event
     And User see returns based on bet "<bet>" and odds
 
     Examples:
-|device    | login          | password   | bet    |
+|device     | login          | password   | bet    |
 |desktop    | WHITA_opex7    | 0p3x2017   | 0.05   |
 
 
